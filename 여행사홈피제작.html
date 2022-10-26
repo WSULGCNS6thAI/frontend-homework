@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-size: x-small;
+                color: rgb(79, 79, 79);
+            }
+
+            #Tablepart1 {
+                width: 567px;
+                height: 175px;
+            }
+            
+            #Tablepart2 {
+                width: 567px;
+                height: 374px;
+            }
+
+            .travel_01 {
+                width: 800px; 
+                height: 102px;
+            }
+
+            .travel_02 {
+                height: 33px;
+            }
+
+            .travel_reservation_01 {
+                width: 233px; 
+                height: 624px;
+                
+            }
+
+            .travel_reservation_02 {
+                width: 515px; 
+                height: 35px;
+                
+            }
+
+            .redtext {
+                color: rgb(255, 150, 115);
+            }
+
+            th {
+                background-color: rgb(247, 247, 247);
+            }
+
+            table, td, th {
+                border : 1px solid rgb(228, 228, 228);
+                border-collapse : collapse;
+            };
+
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="travel_01">
+                <img src="travel_01.gif">
+            </div>
+            <div class="travel_02">
+                <img src="travel_02.gif">
+            </div>
+        </div>
+        <div>
+            <span class="travel_reservation_01">
+                <img src="travel_reservation_01.gif">
+            </span>
+            <span class="travel_reservation_02">
+                <img src="travel_reservation_02.gif">
+            </span>
+        </div>
+        <div id="Tablepart1">
+            <table border="1" width="525px" height="102px">
+                <tr>
+                    <th>성인(만12세이상)</th>
+                    <td ><input type="text" style="width:40px">명 <span class="redtext">[1인당 39,000원]</span></td>
+                    <th rowspan="3">상품함계금액</th>
+                    <td rowspan="3">=<br><input type="text" placeholder="0원" style="width:70px"></td>
+                </tr>
+                <tr>
+                    <th>아동(만12세미만)</th>
+                    <td><input type="text" style="width:40px">명 <span class="redtext">[1인당 29,000원]</span></td>
+                </tr>
+                <tr>
+                    <th>유아(만2세이상)</th>
+                    <td><input type="text" style="width:40px">명 <span class="redtext">[1인당 19,000원]</span></td>
+                </tr>
+            </table>
+            <div style="width:510px; 
+            height: 30px;
+            margin-top: 3px;
+            text-align : center;
+            vertical-align: bottom; 
+            color: rgb(18, 104, 166);
+            background-color: rgb(208, 237, 243);
+            border : 1px solid rgb(175, 220, 230);
+            ">
+                혼자 객실을 이용시 싱글 추가요금, 또는 추가사항에 따라서 추가요금이 발생합니다.
+            </div>
+            <div style="text-align : center; 
+            width:510px;
+            height: 30px;
+            ">
+                <input type="checkbox">이용약관에 동의합니다. <input type="checkbox"> 개인정보보호정책에동의합니다.
+            </div>
+        </div>
+
+        <div id="Tablepart2">
+            <table border="1" width="535px" height="377px">
+                <tr>
+                    <td>한글이름</td>
+                    <td><input type="text" style="width: 8px;0px"> <input type="radio"> 남자<input type="radio"> 여자</td>
+                    <td>영문성/이름</td>
+                    <td><input type="text" style="width:90px"> / <br><input type="text" style="width:80px"></td>
+                </tr>
+                <tr>
+                    <th>연령기준</th>
+                    <td>
+                        <select>
+                        <option value="cafe au lait" selected>연령기준선택</option>
+                        <option value="americano">연령기준선택</option>
+                        <option value="caffe latte">연령기준선택</option>
+                        <option value="espresso">연령기준선택</option>
+                        </select>
+                    </td>
+                    <th>주민번호</th>
+                    <td><input type="text" style="width:80px"> -<br> <input type="text" style="width:90px"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" style="width:40px"> - <input type="text" style="width:50px"> - <br><input type="text" style="width: 50px;"></td>
+                    <th>이메일주소</th>
+                    <td><input type="text" style="width:170px"></td>
+                </tr>
+                <tr>
+                    <th>여권관련정보</th>
+                    <td colspan="3">
+                        <select>
+                            <option value="cafe au lait" selected>:::여권유뮤:::</option>
+                            <option value="americano">여권유뮤</option>
+                            <option value="caffe latte">여권유뮤</option>
+                            <option value="espresso">여권유뮤</option>
+                        </select>
+                        여권번호 <input type="text" style="width:70px">여권만료일 <input type="text" style="width:70px"></td>
+                </tr>
+                <tr>
+                    <th>비자관련정보</th>
+                    <td colspan="3">
+                        <select>
+                            <option value="cafe au lait" selected>:::비자유무:::</option>
+                            <option value="americano">비자유무</option>
+                            <option value="caffe latte">비자유무</option>
+                            <option value="espresso">비자유무</option>
+                        </select>
+                        비자만료일 <input type="text" style="width:230px"></td>
+                </tr>
+                <tr>
+                    <th>리턴연장여부</th>
+                    <td colspan="3"><input type="radio">예<input type="radio">아니오 현지출발예정일 <input type="text" style="width:120px"> 관광진흥기금 
+                        <select>
+                            <option value="cafe au lait" selected>▷ 포함</option>
+                            <option value="americano">포함</option>
+                            <option value="caffe latte">포함</option>
+                            <option value="espresso">포함</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상세주소</th>
+                    <td colspan="3"><input type="text" style="width:330px"> 전체 주소입력</td>
+                </tr>
+                <tr>
+                    <th>고객요청사항</th>
+                    <td colspan="3"><input type="text" style="width:400px"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
