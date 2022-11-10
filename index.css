@@ -93,3 +93,12 @@ button {
     width: 71px;
     height: 27px;
 }
+.body-fill {
+    width: 800px;
+    height: 628px;
+}
+.footer {
+    width: 800px;
+    height: 150px;
+    background-color: black;
+}
